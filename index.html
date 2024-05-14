@@ -30,14 +30,19 @@
         new mapkit.Coordinate(49.982191437863584, 19.874896787399972),
         new mapkit.CoordinateSpan(0.028, 0.028)
        );
-       const map = new mapkit.Map("map-container");
+       const map = new mapkit.Map("map-container", {
+        showsMapTypeControl: false,
+        showsZoomControl: false,
+        showsCompass: false,
+        showsUserLocationControl: false
+      });
        map.colorScheme = mapkit.Map.ColorSchemes.Dark;
        const geocoder = new mapkit.Geocoder({
         language: "pl-PL"
        });
        const audiotourLocation = new mapkit.Coordinate(49.982191437863584, 19.874896787399972);
        const audiotourAnnotation = new mapkit.MarkerAnnotation(audiotourLocation);
-       audiotourAnnotation.color = "#f04e23";
+       audiotourAnnotation.color = "#F9A937";
        audiotourAnnotation.title = "Audiotour.pl";
        audiotourAnnotation.subtitle = "Adama Prażmowskiego 19E";
        audiotourAnnotation.selected = "true";
