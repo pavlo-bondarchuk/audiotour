@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/mml8gpk.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js" crossorigin async data-callback="initMapKit" data-libraries="map,annotations,services" data-initial-token="eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ijc1V1VQUjdKMkQifQ.eyJpc3MiOiI1WTZUM1pDNEhFIiwiaWF0IjoxNzE1Njc0MTYwLCJleHAiOjE3NDcxODA4MDB9.YfL4gDhRe64PB98xbqLCtBNN-q06cWpg0IdZCMacsoCJBMljpaD-RoYj3gqe_ZxxFem21nwD3VLPJ15eePvKzg" async></script>
     <script type="module" async>
       const setupMapKitJs = async () => {
@@ -151,104 +152,106 @@
               </div>
               <img width="948" height="277" src="assets/img/guides_content_bg.png" alt="guides background" loading="lazy" class="guides--content-bg mix-blend-mode-soft-light">
             </div>
+            <div class="guides--image">
+              <img width="574" height="1158" src="assets/img/guides_phones.png" alt="guides phones" loading="lazy" class="guides--phones">
+            </div>
             <div class="guides--text">
               <p>Audioprzewodnik to audioprzewodnik który oprowadzi państwa w multimedialny sposób po multimedialnym mieście Kraków.</p>
               <p>Doskonały do multimedialnego zwiedzania audioprzewodnika w formie audioprzewodnika za pomocą aplikacji multimedialnej. Nie czekaj ani chwili dłużej, zamów audioprzewodnik w formie audioprzewodnika już dziś.</p>
-            </div>
-            <div class="guides--image">
-              <img width="574" height="1158" src="assets/img/guides_phones.png" alt="guides phones" loading="lazy" class="guides--phones">
             </div>
           </div>
         </section>
         <section class="application-functions">
           <div class="container bg-white">
-            <div class="application-functions--head">
+            <div class="functions--head">
               <h2 class="text-heading text-center text-bold mb7">Poznaj funkcje aplikacji:</h2>
               <div class="subtext text-center text-medium text-gray">Kliknij w wybraną funkcję, aby poznać jej działanie</div>
             </div>
-            <div class="application-functions--grid">
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-normal background-blue">
-                  <div class="application-functions--grid-item-head-icon">
-                    <svg class="icon-big icon-map">
-                      <use xlink:href="#icon-map"></use>
-                    </svg>
+            <div class="functions--grid">
+              <div class="swiper-wrapper">
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-normal background-blue">
+                    <div class="functions--grid-item-head-icon">
+                      <svg class="icon-big icon-map">
+                        <use xlink:href="#icon-map"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/interactive_map.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-nonequal application-functions--grid-item-content-collapse">
-                  <div class="application-functions--grid-item-head-content-title">Interaktywna mapa</div>
-                  <div class="application-functions--grid-item-head-content-text">
-                    <p>Ułatwia zwiedzającym nawigację w terenie. </p>
-                    <p>Mapa wyświetla trasę audioprzewodnika. Umożliwia też uruchamianie nagrań z jej poziomu. </p>
-                    <p>Na tym ekranie zwiedzający może też wyświetlić swoją pozycję - dzięki temu łatwiej odnajdzie się w terenie. </p>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-nonequal functions--grid-item-content-collapse">
+                    <div class="functions--grid-item-head-content-title">Interaktywna mapa</div>
+                    <div class="functions--grid-item-head-content-text">
+                      <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                      <p>Mapa wyświetla trasę audioprzewodnika. Umożliwia też uruchamianie nagrań z jej poziomu. </p>
+                      <p>Na tym ekranie zwiedzający może też wyświetlić swoją pozycję - dzięki temu łatwiej odnajdzie się w terenie. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="application-functions--grid-item-content-image">
-                  <img src="assets/img/interactive_map_phone.png" alt="interactive map phones" loading="lazy">
-                </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-blue">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-map">
-                      <use xlink:href="#icon-map"></use>
-                    </svg>
-                  </div>
-                  <img src="assets/img/interactive_map.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">Interaktywna mapa</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                  <div class="functions--grid-item-content-image">
+                    <img src="assets/img/interactive_map_phone.png" alt="interactive map phones" loading="lazy">
                   </div>
                 </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-blue">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-arrow">
-                      <use xlink:href="#icon-arrow"></use>
-                    </svg>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-blue">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-map">
+                        <use xlink:href="#icon-map"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/interactive_map_bg2.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">GPS + Beacony</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Pozwala automatycznie uruchamiać nagrania na podstawie położenia zwiedzającego</p>
-                  </div>
-                </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-blue">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-multilanguage">
-                      <use xlink:href="#icon-multilanguage"></use>
-                    </svg>
-                  </div>
-                  <img src="assets/img/interactive_map_bg3.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">Obsługa wielu języków</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Aplikacja może zawierać w sobie treści w wielu językach. Obsługuje również język migowy.</p>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">Interaktywna mapa</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-blue">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-quiz">
-                      <use xlink:href="#icon-quiz"></use>
-                    </svg>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-blue">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-arrow">
+                        <use xlink:href="#icon-arrow"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map_bg2.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/interactive_map_bg4.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">GPS + Beacony</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Pozwala automatycznie uruchamiać nagrania na podstawie położenia zwiedzającego</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">Quiz</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Audioprzewodnik można rozbudować o moduł quizu - turysta zdobywa wiedzę odpowiadając na zagadki</p>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-blue">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-multilanguage">
+                        <use xlink:href="#icon-multilanguage"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map_bg3.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
+                  </div>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">Obsługa wielu języków</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Aplikacja może zawierać w sobie treści w wielu językach. Obsługuje również język migowy.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-blue">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-quiz">
+                        <use xlink:href="#icon-quiz"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map_bg4.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
+                  </div>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">Quiz</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Audioprzewodnik można rozbudować o moduł quizu - turysta zdobywa wiedzę odpowiadając na zagadki</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -338,7 +341,7 @@
             </div>
           </div>
         </section>
-        <section class="guides">
+        <section class="guides guide-green">
           <div class="container bg-white">
             <div class="left-border-green guides--head">
               <div class="guides--head-icon-green">
@@ -351,7 +354,7 @@
                 <p class="text-subheading">Zawsze aktualny, <strong class="highlight--green">wiele możliwości</strong></p>
               </div>
             </div>
-            <div div class="guides--content-green">
+            <div class="guides--content-green">
               <div class="content">
                 <h2 class="text-title text-white text-bold mb25">Na szlaku, na szczycie? <br>
                   Zawsze z Tobą.</h2>
@@ -359,104 +362,106 @@
               </div>
               <img width="948" height="277" src="assets/img/guides_content_bg_.png" alt="guides background" loading="lazy" class="guides--content-bg mix-blend-mode-soft-light">
             </div>
+            <div class="guides--image">
+              <img width="598" height="604" src="assets/img/guides_phones_.png" alt="guides phones" loading="lazy" class="guides--phones">
+            </div>
             <div class="guides--text">
               <p>Audioprzewodnik to audioprzewodnik który oprowadzi państwa w multimedialny sposób po multimedialnym mieście Kraków.</p>
               <p>Doskonały do multimedialnego zwiedzania audioprzewodnika w formie audioprzewodnika za pomocą aplikacji multimedialnej. Nie czekaj ani chwili dłużej, zamów audioprzewodnik w formie audioprzewodnika już dziś.</p>
-            </div>
-            <div class="guides--image">
-              <img width="598" height="604" src="assets/img/guides_phones_.png" alt="guides phones" loading="lazy" class="guides--phones">
             </div>
           </div>
         </section>
         <section class="application-functions">
           <div class="container bg-white">
-            <div class="application-functions--head">
+            <div class="functions--head">
               <h2 class="text-heading text-center text-bold mb7">Poznaj funkcje aplikacji:</h2>
               <div class="subtext text-center text-medium text-gray">Kliknij w wybraną funkcję, aby poznać jej działanie</div>
             </div>
-            <div class="application-functions--grid">
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-normal background-green">
-                  <div class="application-functions--grid-item-head-icon">
-                    <svg class="icon-big icon-map">
-                      <use xlink:href="#icon-map"></use>
-                    </svg>
+            <div class="functions--grid">
+              <div class="swiper-wrapper">
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-normal background-green">
+                    <div class="functions--grid-item-head-icon">
+                      <svg class="icon-big icon-map">
+                        <use xlink:href="#icon-map"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/interactive_map.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-nonequal application-functions--grid-item-content-collapse">
-                  <div class="application-functions--grid-item-head-content-title">Interaktywna mapa</div>
-                  <div class="application-functions--grid-item-head-content-text">
-                    <p>Ułatwia zwiedzającym nawigację w terenie. </p>
-                    <p>Mapa wyświetla trasę audioprzewodnika. Umożliwia też uruchamianie nagrań z jej poziomu. </p>
-                    <p>Na tym ekranie zwiedzający może też wyświetlić swoją pozycję - dzięki temu łatwiej odnajdzie się w terenie. </p>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-nonequal functions--grid-item-content-collapse">
+                    <div class="functions--grid-item-head-content-title">Interaktywna mapa</div>
+                    <div class="functions--grid-item-head-content-text">
+                      <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                      <p>Mapa wyświetla trasę audioprzewodnika. Umożliwia też uruchamianie nagrań z jej poziomu. </p>
+                      <p>Na tym ekranie zwiedzający może też wyświetlić swoją pozycję - dzięki temu łatwiej odnajdzie się w terenie. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="application-functions--grid-item-content-image">
-                  <img src="assets/img/interactive_map_phone_.png" alt="interactive map phones" loading="lazy">
-                </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-green">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-map">
-                      <use xlink:href="#icon-map"></use>
-                    </svg>
-                  </div>
-                  <img src="assets/img/interactive_map.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">Interaktywna mapa</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                  <div class="functions--grid-item-content-image">
+                    <img src="assets/img/interactive_map_phone_.png" alt="interactive map phones" loading="lazy">
                   </div>
                 </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-green">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-arrow">
-                      <use xlink:href="#icon-arrow"></use>
-                    </svg>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-green">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-map">
+                        <use xlink:href="#icon-map"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/interactive_map_bg2.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">GPS + Nawigacja</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Wyświetla Twoją aktualną pozycję na mapie i umożliwia nawigację do kolejnej atrakcji.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-green">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-multilanguage">
-                      <use xlink:href="#icon-multilanguage"></use>
-                    </svg>
-                  </div>
-                  <img src="assets/img/interactive_map_bg3.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">Obsługa wielu języków</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Aplikacja może zawierać w sobie treści w wielu językach. Obsługuje również język migowy.</p>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">Interaktywna mapa</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-green">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-pazzle">
-                      <use xlink:href="#icon-pazzle"></use>
-                    </svg>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-green">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-arrow">
+                        <use xlink:href="#icon-arrow"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map_bg2.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/interactive_map_bg5.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">GPS + Nawigacja</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Wyświetla Twoją aktualną pozycję na mapie i umożliwia nawigację do kolejnej atrakcji.</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">Dodatkowe moduły</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Dopasuj aplikację do swoich potrzeb. Kreator tras rowerowych, gra terenowa, kalendarz, audioprzewodnik? Mamy to.</p>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-green">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-multilanguage">
+                        <use xlink:href="#icon-multilanguage"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map_bg3.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
+                  </div>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">Obsługa wielu języków</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Aplikacja może zawierać w sobie treści w wielu językach. Obsługuje również język migowy.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-green">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-pazzle">
+                        <use xlink:href="#icon-pazzle"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/interactive_map_bg5.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
+                  </div>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">Dodatkowe moduły</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Dopasuj aplikację do swoich potrzeb. Kreator tras rowerowych, gra terenowa, kalendarz, audioprzewodnik? Mamy to.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -712,104 +717,106 @@
               </div>
               <img width="948" height="277" src="assets/img/solutions_bg.png" alt="guides background" loading="lazy" class="guides--content-bg mix-blend-mode-multiply">
             </div>
+            <div class="solutions--image">
+              <img width="520" height="658" src="assets/img/solutions_phones.png" alt="solutions phones" loading="lazy" class="solutions--phones">
+            </div>
             <div class="guides--text">
               <p>Audioprzewodnik to audioprzewodnik który oprowadzi państwa w multimedialny sposób po multimedialnym mieście Kraków.</p>
               <p>Doskonały do multimedialnego zwiedzania audioprzewodnika w formie audioprzewodnika za pomocą aplikacji multimedialnej. Nie czekaj ani chwili dłużej, zamów audioprzewodnik w formie audioprzewodnika już dziś.</p>
-            </div>
-            <div class="solutions--image">
-              <img width="520" height="658" src="assets/img/solutions_phones.png" alt="solutions phones" loading="lazy" class="solutions--phones">
             </div>
           </div>
         </section>
         <section class="application-functions">
           <div class="container bg-white">
-            <div class="application-functions--head">
+            <div class="functions--head">
               <h2 class="text-heading text-center text-bold mb7">Nasz proces:</h2>
               <div class="subtext text-center text-medium text-gray">Kliknij w wybrany krok, aby dowiedzieć się więcej</div>
             </div>
-            <div class="application-functions--grid">
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-normal background-black">
-                  <div class="application-functions--grid-item-head-icon">
-                    <svg class="icon-big icon-conversation">
-                      <use xlink:href="#icon-conversation"></use>
-                    </svg>
+            <div class="functions--grid">
+              <div class="swiper-wrapper">
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-normal background-black">
+                    <div class="functions--grid-item-head-icon">
+                      <svg class="icon-big icon-conversation">
+                        <use xlink:href="#icon-conversation"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/rozmowa.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/rozmowa.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-nonequal application-functions--grid-item-content-collapse">
-                  <div class="application-functions--grid-item-head-content-title">1. Rozmowa</div>
-                  <div class="application-functions--grid-item-head-content-text">
-                    <p>Ułatwia zwiedzającym nawigację w terenie. </p>
-                    <p>Mapa wyświetla trasę audioprzewodnika. Umożliwia też uruchamianie nagrań z jej poziomu. </p>
-                    <p>Na tym ekranie zwiedzający może też wyświetlić swoją pozycję - dzięki temu łatwiej odnajdzie się w terenie. </p>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-nonequal functions--grid-item-content-collapse">
+                    <div class="functions--grid-item-head-content-title">1. Rozmowa</div>
+                    <div class="functions--grid-item-head-content-text">
+                      <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                      <p>Mapa wyświetla trasę audioprzewodnika. Umożliwia też uruchamianie nagrań z jej poziomu. </p>
+                      <p>Na tym ekranie zwiedzający może też wyświetlić swoją pozycję - dzięki temu łatwiej odnajdzie się w terenie. </p>
+                    </div>
                   </div>
-                </div>
-                <div class="application-functions--grid-item-content-image">
-                  <img src="assets/img/rozmowa_phone.png" alt="interactive map phones" loading="lazy">
-                </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-black">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-conversation">
-                      <use xlink:href="#icon-conversation"></use>
-                    </svg>
-                  </div>
-                  <img src="assets/img/rozmowa.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">1. Rozmowa</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                  <div class="functions--grid-item-content-image">
+                    <img src="assets/img/rozmowa_phone.png" alt="interactive map phones" loading="lazy">
                   </div>
                 </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-black">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-quotation">
-                      <use xlink:href="#icon-quotation"></use>
-                    </svg>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-black">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-conversation">
+                        <use xlink:href="#icon-conversation"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/rozmowa.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/quotation.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">2. Wycena</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Pozwala automatycznie uruchamiać nagrania na podstawie położenia zwiedzającego</p>
-                  </div>
-                </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-black">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-projekt">
-                      <use xlink:href="#icon-projekt"></use>
-                    </svg>
-                  </div>
-                  <img src="assets/img/projekt.png" alt="projekt" class="application-functions--grid-item-head-bg" loading="lazy">
-                </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">3. Projekt</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Aplikacja może zawierać w sobie treści w wielu językach. Obsługuje również język migowy.</p>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">1. Rozmowa</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Ułatwia zwiedzającym nawigację w terenie. </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="application-functions--grid-item">
-                <div class="application-functions--grid-item-head application-functions--grid-item-head-small background-black">
-                  <div class="application-functions--grid-item-head-icon icon-center">
-                    <svg class="icon-big icon-implementation">
-                      <use xlink:href="#icon-implementation"></use>
-                    </svg>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-black">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-quotation">
+                        <use xlink:href="#icon-quotation"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/quotation.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
                   </div>
-                  <img src="assets/img/implementation_bg.png" alt="interactive map" class="application-functions--grid-item-head-bg" loading="lazy">
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">2. Wycena</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Pozwala automatycznie uruchamiać nagrania na podstawie położenia zwiedzającego</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="application-functions--grid-item-content application-functions--grid-item-content-padding-equal">
-                  <div class="application-functions--grid-item-head-content-title-small">4. Wdrożenie</div>
-                  <div class="application-functions--grid-item-head-content-text-small">
-                    <p>Wejście do kolejnej sali ekspozycji automatycznie uruchamia kolejne nagranie</p>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-black">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-projekt">
+                        <use xlink:href="#icon-projekt"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/projekt.png" alt="projekt" class="functions--grid-item-head-bg" loading="lazy">
+                  </div>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">3. Projekt</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Aplikacja może zawierać w sobie treści w wielu językach. Obsługuje również język migowy.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="functions--grid-item swiper-slide">
+                  <div class="functions--grid-item-head functions--grid-item-head-small background-black">
+                    <div class="functions--grid-item-head-icon icon-center">
+                      <svg class="icon-big icon-implementation">
+                        <use xlink:href="#icon-implementation"></use>
+                      </svg>
+                    </div>
+                    <img src="assets/img/implementation_bg.png" alt="interactive map" class="functions--grid-item-head-bg" loading="lazy">
+                  </div>
+                  <div class="functions--grid-item-content functions--grid-item-content-padding-equal">
+                    <div class="functions--grid-item-head-content-title-small">4. Wdrożenie</div>
+                    <div class="functions--grid-item-head-content-text-small">
+                      <p>Wejście do kolejnej sali ekspozycji automatycznie uruchamia kolejne nagranie</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1011,8 +1018,8 @@
             </div>
           </div>
         </div>
+        <div class="container bg-gray-dark p28 text-gray-transparent text-center copiright">© 2023 Audiotour.pl</div>
     </footer>
-    <script src="script.js"></script>
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
           <symbol id="icon-headphones" width="36" height="37" viewBox="33.786 707.618 24.287 25.057" fill="transparent">
@@ -1092,5 +1099,7 @@
           </symbol>
       </defs>
   </svg>
+  <script src="assets/js/swiper.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
