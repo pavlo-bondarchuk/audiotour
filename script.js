@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.navbar-toggler').addEventListener('click', function () {
         document.querySelector('.navbar-toggler').classList.toggle('active');
     });
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 968) {
         document.querySelector('.navbar-toggler').addEventListener('click', function () {
             document.querySelector('.menu-mobile').classList.toggle('active');
         });

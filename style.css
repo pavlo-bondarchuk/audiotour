@@ -588,6 +588,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
 }
 
 .navigation,
@@ -1570,7 +1571,10 @@ table tbody td .icon-check {
         margin: 0;
         padding: 0;
     }
-    table, thead, tbody, tr {
+    table thead tr {
+        display: flex;
+    }
+    table, thead, tbody {
         display: block;
     }
     table tbody td:nth-child(2), table tbody td:nth-child(3) {
@@ -1588,6 +1592,10 @@ table tbody td .icon-check {
     table thead th:first-child {
         vertical-align: bottom;
         font-size: 16px;
+        display: flex;
+    }
+    table thead th:first-child span {
+        align-self: flex-end;
     }
     table thead th:not(:first-child) {
         font-weight: 400;
