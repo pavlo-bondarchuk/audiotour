@@ -139,8 +139,8 @@ table {
 /* End of reset styles */
 :root {
     --primary: #fff;
-    --secondary: #00ff00;
     --black: #000;
+    --black-transparent: rgba(0, 0, 0, 0.45);
     --white: #fff;
     --gray: #a2a2a2;
     --grayBCBCBC: #BCBCBC;
@@ -293,6 +293,10 @@ body {
     margin-bottom: 18px;
 }
 
+.mb20 {
+    margin-bottom: 1.25rem;
+}
+
 .mb25 {
     margin-bottom: 1.563rem;
 }
@@ -354,6 +358,11 @@ body {
     line-height: 1.5;
 }
 
+.text20 {
+    font-size: 1.25rem;
+    line-height: 1.33;
+}
+
 .text-lg {
     font-size: 1.625rem;
     line-height: 1.33;
@@ -388,6 +397,9 @@ body {
 
 .text-black {
     color: var(--black);
+}
+.text-black-transparent {
+    color: var(--black-transparent);
 }
 
 .text-gray {
@@ -535,6 +547,7 @@ body {
     box-sizing: border-box;
     font-size: 14px;
     font-weight: bold;
+    gap: 10px;
 }
 
 .btn-rounded {
@@ -1404,7 +1417,20 @@ table tbody td .icon-check {
         grid-area: 2 / 4 / 3 / 5;
     }
 }
-
+@media (max-width: 1366px){
+    .guides, .solutions {
+        overflow: hidden;
+    }
+    .functions--grid .swiper-wrapper {
+        width: calc(100% - 4rem);
+    }
+    .functions--grid-item-content-image {
+        right: -10%;
+    }
+    .guides--content-green, .guides--content-orange, .guides--content-blue {
+        max-width: 100%;
+    }
+}
 @media (max-width: 968px) {
     .navigation {
         padding: 0.5rem 0.813rem;
@@ -1424,6 +1450,7 @@ table tbody td .icon-check {
         flex-direction: column;
         justify-content: flex-start;
         height: calc(100vh - 74px);
+        padding: 35px 28px;
     }
 
     .appgrid {
@@ -1478,7 +1505,7 @@ table tbody td .icon-check {
         right: 0;
         max-width: 240px;
         left: 24px;
-        top: -72px;
+        top: -40px;
     }
 
     .guide-green .guides--text {
@@ -1526,7 +1553,7 @@ table tbody td .icon-check {
         padding: 0 24px;
     }
     .favorites--columns-item-content {
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .favorites--columns-item-image {
         width: 64px;
