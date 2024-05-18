@@ -203,6 +203,10 @@ body {
     border-radius: 25px;
 }
 
+.rounded35 {
+    border-radius: 35px;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
