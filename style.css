@@ -604,7 +604,7 @@ body {
 }
 
 .navigation {
-    padding: 2rem;
+    padding: 2rem 13px;
 }
 
 nav a {
@@ -648,6 +648,7 @@ nav a {
 .navbar-toggler span {
     width: 20px;
     height: 4px;
+    min-height: 4px;
     background-color: var(--gray);
 }
 
