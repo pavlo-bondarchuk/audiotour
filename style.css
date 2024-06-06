@@ -211,8 +211,8 @@ body {
     overflow: hidden;
 }
 
-.columns .col:nth-child(1) {
-    width: 337px;
+.nohover {
+
 }
 
 .p2 {
@@ -261,8 +261,10 @@ body {
     margin-right: 1.875rem;
 }
 
-.mr111 {
-    margin-right: 111px;
+@media (min-width: 968px) {
+    .mr111 {
+        margin-right: 111px;
+    }
 }
 
 .ml16 {
@@ -301,10 +303,16 @@ body {
     margin-bottom: 1.25rem;
 }
 
+.mb22 {
+    margin-bottom: 1.375rem;
+}
+
 .mb25 {
     margin-bottom: 1.563rem;
 }
-
+.mb31 {
+    margin-bottom: 1.938rem;
+}
 .mb48 {
     margin-bottom: 3rem;
 }
@@ -331,6 +339,10 @@ body {
 
 .position-relative {
     position: relative;
+}
+
+.ls1_2 {
+    letter-spacing: 1.2px;
 }
 
 .text-center {
@@ -383,7 +395,7 @@ body {
 }
 
 .subtext {
-    font-size: 1.063rem;
+    font-size: clamp(0.875rem, 0.8176rem + 0.2868vw, 1.0625rem);
     line-height: 1.29;
 }
 
@@ -523,7 +535,7 @@ body {
     border: 1px solid var(--white);
 }
 
-.btn-white:hover {
+.btn-white:not(.nohover):hover {
     background-color: transparent;
     color: var(--white);
     border: 1px solid var(--white);
@@ -550,6 +562,7 @@ body {
     padding: 0 10px;
     box-sizing: border-box;
     font-size: 14px;
+    line-height: normal;
     font-weight: bold;
     gap: 10px;
 }
@@ -562,12 +575,14 @@ body {
     background: linear-gradient(180deg, #25B4F0 0%, #267ADF 100%) 0% 0% no-repeat padding-box;
     color: var(--white);
     border: none;
+    text-wrap: nowrap;
 }
 
 .btn-gradient-black {
     background: linear-gradient(180deg, #3B3B3B 0%, #000000 100%) 0% 0% no-repeat padding-box;
     color: var(--white);
     border: none;
+    text-wrap: nowrap;
 }
 
 .btn-wide {
@@ -774,6 +789,20 @@ nav a {
     margin-right: 1rem;
 }
 
+@media (max-width: 968px) {
+    .guides--head-icon-blue, 
+    .guides--head-icon-green, 
+    .guides--head-icon-orange {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+    }
+    .guides--head-icon-orange img {
+        width: 42px;
+        height: 42px;
+    }
+}
+
 .icon {
     display: inline-block;
     width: 2.25em;
@@ -781,6 +810,13 @@ nav a {
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+}
+
+@media (max-width: 968px) {
+    .icon {
+        transform: scale(.67);
+    }
+    
 }
 
 .icon-marker {
@@ -968,7 +1004,7 @@ nav a {
 
 .application-functions .container {
     position: relative;
-    padding: 2rem 0;
+    padding: 2rem 0 39px;
 }
 
 
@@ -982,6 +1018,7 @@ nav a {
 
 .functions--grid-item-head {
     position: relative;
+    min-height: 120px;
 }
 
 .background-blue {
@@ -1029,6 +1066,12 @@ nav a {
 .functions--grid-item-content-collapse {
     max-width: 54%;
 }
+@media (max-width: 968px) {
+    .functions--grid-item-content-collapse {
+        max-width: 100%;
+    }
+    
+}
 
 .functions--grid-item-head-content-title {
     font-size: 20px;
@@ -1047,7 +1090,7 @@ nav a {
 }
 
 .functions--grid-item-head-content-text {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 0.9618rem + 0.1912vw, 1.125rem);
     line-height: 1.33;
     color: var(--black);
 }
@@ -1070,6 +1113,11 @@ nav a {
 
 .favorites {
     background-color: var(--light-gray--bg);
+}
+@media (min-width: 968px) {
+    .favorites .container {
+        border-radius: 0 0 32px 32px;
+    }
 }
 
 .favorites--columns {
@@ -1286,6 +1334,13 @@ table tbody td .icon-check {
     background-color: var(--light-gray--bg);
     padding: 2rem 0;
 }
+@media (max-width: 968px) {
+    .opinions .subtext {
+        text-align: left;
+        padding: 0 24px;
+    }
+    
+}
 
 .opinions--head {
     margin-bottom: 3rem;
@@ -1393,6 +1448,9 @@ table tbody td .icon-check {
 }
 
 @media (min-width: 968px) {
+    .columns .col:nth-child(1) {
+        width: 337px;
+    }
     .navbar-toggler {
         display: none;
     }
@@ -1438,13 +1496,59 @@ table tbody td .icon-check {
         max-width: 100%;
     }
 }
-@media (max-width: 968px) {
-    .navigation {
-        padding: 0.5rem 0.813rem;
+@media (min-width: 768px) and (max-width: 1366px) {
+    .guides--image, .solutions--image {
+        max-width: 40%;
+        right: 0;
+        height: fit-content;
+        top: 50%;
+        transform: translateY(-50%);
     }
-
+}
+@media (max-width: 968px) {
     .menu {
         display: none;
+    }
+    .functions--grid {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 32px;
+    }
+    .functions--grid .swiper-wrapper {
+        align-items: center;
+    }
+    .functions--grid-item-head-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .functions--grid-item {
+        max-height: 200px;
+        overflow: hidden;
+    }
+    .functions--grid-item:not(.swiper-slide-active){
+        opacity: 0.5;
+    }
+    .functions--grid-item.swiper-slide-active {
+        min-width: 288px;
+        max-height: 233px;
+    }
+    .functions--grid-item-content-image {
+        display: none;
+    }
+    .favorites--columns {
+        flex-direction: column;
+        padding: 0 24px 3rem;
+    }
+    .comparison--table {
+        padding: 0 24px;
+    }
+}
+@media (max-width: 768px) {
+    .navigation {
+        padding: 0.5rem 0.813rem;
     }
 
     .menu-mobile.active {
@@ -1462,6 +1566,10 @@ table tbody td .icon-check {
 
     .appgrid {
         padding: 289px 0 37px;
+        overflow: hidden;
+    }
+    .appgrid img {
+        transform: translate(-50%, -65%) scale(1.4);
     }
 
     .logos .columns {
@@ -1503,12 +1611,18 @@ table tbody td .icon-check {
 
     .guides--image {
         right: 0;
-        max-width: 50%;
+        max-width: 241px;
+        left: 24px;
+        top: -50px;
+    }
+
+    .guide-green .guides--image {
+        right: 0;
+        max-width: calc(100% - 48px);
         left: 24px;
         top: -40px;
     }
-
-    .guide-green .guides--image, .solutions--image {
+    .solutions--image {
         right: 0;
         max-width: 240px;
         left: 24px;
@@ -1522,43 +1636,13 @@ table tbody td .icon-check {
         width: 100%;
         max-width: 100%;
         padding: 70px 24px 20px;
+        text-align: center;
     }
-    .functions--grid {
-        display: flex;
-        padding: 0;
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: 32px;
-    }
-    .functions--grid .swiper-wrapper {
-        align-items: center;
-    }
-    .functions--grid-item-head-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .functions--grid-item {
-        max-height: 200px;
-        overflow: hidden;
-    }
-    .functions--grid-item:not(.swiper-slide-active){
-        opacity: 0.5;
-    }
-    .functions--grid-item.swiper-slide-active {
-        min-width: 73%;
-        max-height: 233px;
-    }
-    .functions--grid-item-content-image {
-        display: none;
-    }
+    
     .favorites--head {
         padding: 0 24px;
     }
-    .favorites--columns {
-        flex-direction: column;
-        padding: 0 24px;
-    }
+    
     .favorites--columns-item-content {
         margin-right: 10px;
     }
@@ -1570,9 +1654,7 @@ table tbody td .icon-check {
     .comparison--head {
         padding: 0 24px;
     }
-    .comparison--table {
-        padding: 0 24px;
-    }
+    
     table {
         margin: 0;
         padding: 0;
@@ -1590,15 +1672,27 @@ table tbody td .icon-check {
         display: block;
         margin: 0 auto 10px;
     }
-    table thead th, table tbody td, table tbody td:nth-child(2), table tbody td:nth-child(3) {
-        padding: 9px 12px;
-        width: 33.33%;
-        vertical-align: top;
+    table tbody td:nth-child(2), 
+    table tbody td:nth-child(3) {
+        font-size: 0;
+    }
+    table thead th:nth-child(1),
+    table tbody td:nth-child(1) {
+        width: 60%;
+    }
+    table thead th:nth-child(2),
+    table thead th:nth-child(3),
+    table tbody td:nth-child(2), 
+    table tbody td:nth-child(3) {
+        padding: 9px 8px;
+        width: 20%;
+        vertical-align: middle;
     }
     table thead th:first-child {
         vertical-align: bottom;
         font-size: 16px;
         display: flex;
+        padding: 8px 1rem;
     }
     table thead th:first-child span {
         align-self: flex-end;
@@ -1608,6 +1702,10 @@ table tbody td .icon-check {
     }
     table thead th div {
         flex-direction: column;
+    }
+    table thead th div span {
+        text-align: center;
+        word-break: break-all;
     }
     table thead th .icon-audio,
     table thead th .icon-marker {
@@ -1626,5 +1724,9 @@ table tbody td .icon-check {
     }
     footer {
         overflow: hidden;
+    }
+    .columns .col:nth-child(2),
+    .columns .col:nth-child(3) {
+        display: none;
     }
 }

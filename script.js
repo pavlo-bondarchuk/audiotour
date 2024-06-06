@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         const swiper = new Swiper('.functions--grid', {
             loop: true,
-            slidesPerView: 1.5,
+            slidesPerView: 1.289,
             sliderPerSlide: 1,
             spaceBetween: 13,
             centeredSlides: true,
