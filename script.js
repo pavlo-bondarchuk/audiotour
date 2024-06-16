@@ -15,30 +15,30 @@ document.addEventListener('DOMContentLoaded', function () {
             centeredSlides: true,
         });
     }
-    function isIOS() {
-        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    }
+    // function isIOS() {
+    //     return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    // }
       
-    function isAndroid() {
-        return /Android/.test(navigator.userAgent);
-    }
+    // function isAndroid() {
+    //     return /Android/.test(navigator.userAgent);
+    // }
       
-    function showButtonOnMobile() {
-        var buttons = document.querySelectorAll(".favorites--columns-item-links .btn");
+    // function showButtonOnMobile() {
+    //     var buttons = document.querySelectorAll(".favorites--columns-item-links .btn");
       
-        for (var i = 0; i < buttons.length; i++) {
-            var button = buttons[i];
+    //     for (var i = 0; i < buttons.length; i++) {
+    //         var button = buttons[i];
             
-            if (isIOS()) {
-                button.style.display = button.id === "iOsBtn" ? "flex" : "none";
-            } else if (isAndroid()) {
-                button.style.display = button.id === "androidBtn" ? "flex" : "none";
-            } else if (!isIOS() && !isAndroid()) {
-                button.style.display = button.id === "otherOsBtn" ? "flex" : "none";
-            }
-        }
-    }
+    //         if (isIOS()) {
+    //             button.style.display = button.id === "iOsBtn" ? "flex" : "none";
+    //         } else if (isAndroid()) {
+    //             button.style.display = button.id === "androidBtn" ? "flex" : "none";
+    //         } else if (!isIOS() && !isAndroid()) {
+    //             button.style.display = button.id === "otherOsBtn" ? "flex" : "none";
+    //         }
+    //     }
+    // }
       
-    window.onload = showButtonOnMobile;     
+    // window.onload = showButtonOnMobile;     
             
 });

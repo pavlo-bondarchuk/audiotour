@@ -987,11 +987,22 @@ nav a {
     max-width: 520px;
 }
 
-.guides--phones,
+.guides--phones {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 40px;
+}
+@media (max-width: 968px) {
+    .guides--phones {
+        object-position: center;
+    }
+}
 .solutions--phones {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-position: center;
 }
 
 .application-functions {
@@ -1109,6 +1120,9 @@ nav a {
     position: absolute;
     top: 2rem;
     right: 2rem;
+}
+.functions--grid-item-content-image img {
+    max-width: 221px;
 }
 
 .favorites {
@@ -1481,6 +1495,9 @@ table tbody td .icon-check {
     .functions--grid-item:nth-child(5) {
         grid-area: 2 / 4 / 3 / 5;
     }
+    #otherOsBtn {
+        display: none;
+    }
 }
 @media (max-width: 1366px){
     .guides, .solutions {
@@ -1497,15 +1514,33 @@ table tbody td .icon-check {
     }
 }
 @media (min-width: 768px) and (max-width: 1366px) {
+    .appgrid {
+        padding: 40vh 0 72px;
+    }
     .guides--image, .solutions--image {
         max-width: 40%;
         right: 0;
         height: fit-content;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 40px;
+        transform: translateY(0%);
     }
 }
 @media (max-width: 968px) {
+    .menu-mobile.active {
+        display: flex;
+        position: absolute;
+        top: 123px;
+        background: var(--light-gray);
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: calc(100vh - 74px);
+        padding: 35px 28px;
+    }
+    #iOsBtn, #androidBtn {
+        display: none;
+    }
     .menu {
         display: none;
     }
@@ -1533,7 +1568,7 @@ table tbody td .icon-check {
     }
     .functions--grid-item.swiper-slide-active {
         min-width: 288px;
-        max-height: 233px;
+        max-height: fit-content;
     }
     .functions--grid-item-content-image {
         display: none;
@@ -1547,21 +1582,11 @@ table tbody td .icon-check {
     }
 }
 @media (max-width: 768px) {
+    .menu-mobile.active {
+        top: 74px;
+    }
     .navigation {
         padding: 0.5rem 0.813rem;
-    }
-
-    .menu-mobile.active {
-        display: flex;
-        position: absolute;
-        top: 74px;
-        background: var(--light-gray);
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: calc(100vh - 74px);
-        padding: 35px 28px;
     }
 
     .appgrid {
@@ -1610,32 +1635,38 @@ table tbody td .icon-check {
     }
 
     .guides--image {
-        right: 0;
-        max-width: 241px;
+        position: relative;
+        top: 0;
+        max-width: 220px;
         left: 24px;
-        top: -50px;
+        margin-top: -55%;
     }
 
     .guide-green .guides--image {
-        right: 0;
+        position: relative;
+        top: 0;
         max-width: calc(100% - 48px);
         left: 24px;
-        top: -40px;
+        margin-top: -50%;
     }
     .solutions--image {
-        right: 0;
+        position: relative;
+        top: 0;
         max-width: 240px;
         left: 24px;
-        top: -40px;
+        margin-top: -50%;
+    }
+    .solutions--image img {
+        object-position: center;
     }
 
     .guide-green .guides--text {
-        padding: 110px 24px 20px;
+        padding: 20px 24px;
     }
     .guides--text {
         width: 100%;
         max-width: 100%;
-        padding: 70px 24px 20px;
+        padding: 20px 24px;
         text-align: center;
     }
     
@@ -1705,7 +1736,7 @@ table tbody td .icon-check {
     }
     table thead th div span {
         text-align: center;
-        word-break: break-all;
+        word-break: break-word;
     }
     table thead th .icon-audio,
     table thead th .icon-marker {
