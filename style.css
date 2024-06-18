@@ -553,7 +553,7 @@ body {
 }
 
 .btn-app {
-    max-width: 145px;
+    min-width: 145px;
     height: 30px;
     text-align: center;
     display: flex;
